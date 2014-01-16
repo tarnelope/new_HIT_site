@@ -1,0 +1,152 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.homeSlideshow {
+	ul {
+		padding: 0px;
+		list-style: none;
+	}
+	li {
+		height: 420px;
+	}
+}
+
+#slide-1 {
+	background: #4b545f;
+	background: linear-gradient(top, #fff 0%, #0066CC 80%);
+	background: -moz-linear-gradient(top, #fff 0%, #0066CC 80%);
+	background: -webkit-linear-gradient(top, #fff 0%,#0066CC 80%);
+}
+
+#slide-2, #slide-3, #slide-4 {
+	display: none;
+}
+
+.slideLabel {
+	vertical-align: middle;
+}
+
+.image {
+	background-repeat: no-repeat;
+}
+
+.image, .slideLabel, .homeInfoBox {
+	display: inline-block;
+}
+
+#ctpImage {
+	width: 17.438em;
+	height: 100%;
+	margin: 1em 0 0 1em;	
+	background-image: url(/assets/plater.png);
+}
+
+#ctpLabel {
+	margin: 0 0 20em 4.125em;
+	width: 28.125em;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+#solarLabel, #opticsLabel, #contactLabel {
+	position: absolute;
+	color: white;
+}
+
+#solarLabel{
+	top: 8.375em;
+	width: 29.125em;
+	margin-left: 1.250em;
+}
+
+#opticsLabel {
+	top: 19.375em;
+	margin-left: 1.250em;
+	width: 36.125em;
+	background: rgba(44, 47, 56, 0.75);
+	padding: 1em;
+}
+
+#contactLabel {
+	color: rgb(60, 174, 197);
+	top: 12.375em;
+	width: 29.125em;
+	margin-left: 2.250em;
+}
+
+.slideLabelText {
+	font-size: 2em;
+	line-height: 1.3em;
+}
+
+.slideLabelBtn {
+	background: #FFCC00;
+	width: 11.875em;
+	height: 2.625em;
+	line-height: 2.625em;
+	color: #000;
+	text-align: center;
+	text-weight: bold;
+	margin: auto;
+	margin-top: 5px;
+	
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.homeInfoBar {
+	margin-top: 5px;
+}
+
+.homeInfoBox {
+	vertical-align: top;
+	background: rgba( 200, 200, 255, 0.2);
+	width: 13.56em;
+	height: 6.250em;
+	
+	a {
+		text-decoration: none;
+		color: rgba(240, 240, 240, 0.8);
+	}
+}
+
+
+.homeInfoBoxArrow {
+	color: rgba(20, 20, 20, 0.8);
+	width: 20px;
+	height: 20px;
+	background: rgba(255,255, 255, 0.7);
+	margin: auto;
+	margin-top: 5px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 1px;
+}
+
+.activeInfoBox {
+	.homeInfoBoxArrow {
+		background: #FFCC00;
+	}
+	
+	.homeInfoBox {
+		color:white;
+	}
+}
+
+.homeInfoBox:hover {
+	
+	.homeInfoBoxText {
+		color: white;
+	}
+	
+	.homeInfoBoxArrow {
+		background: white;
+	}
+
+};
+
+.homeInfoBoxText {
+	padding: 12px;
+}

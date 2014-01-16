@@ -1,0 +1,171 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	background: rgb(20, 20, 20);
+	color: rgba(255, 255, 255, 0.95);
+	font-family: Helvetica;
+	margin: 0;
+}
+
+#headerDiv {
+	width: 100%;
+	min-width:960px;
+	height: 80px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #cccccc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cccccc));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#cccccc 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#cccccc 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#cccccc 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#cccccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 );
+
+	border-bottom: 4px solid #FFCC00;
+	
+	/* NAVIGATION CSS */
+	nav {
+		height: 85px;
+		clear: both;
+	}
+	#logo {
+		background-image:url(/assets/hit-logo.png);
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 163px;
+		top: 0.4em;
+		position: relative;
+		display: inline;
+		float: left;
+	}
+	/*#logo img{
+		top: 0.4em;
+		float: left;
+		position: relative;
+	}*/
+
+	#topNav {
+		margin-top: 2.7em;
+		float: left;
+		margin-left: 18.313em;
+		list-style: none;
+		font-size: 12px;
+		font-weight: bold;
+		position: relative;
+		display: inline-block;
+		z-index: 1000;
+	}
+
+	.navItem {
+		float: left;
+		color: #666666;
+		height: 40px;
+		width: 8.875em;
+		border: 1px solid #999999;
+		margin-right: 5px;
+		text-align: center;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+
+	.navArrow {
+		display: none;
+	}
+
+	.sub {
+		margin-top: 6px;
+		display: none;
+		list-style: none;
+		background: #5f6975; 
+		border-radius: 0px; 
+		padding: 0;
+		position: absolute; 
+		top: 100%;
+
+		li {
+			width: 13em;
+			/*height: 40px; */
+			line-height: 40px;
+		}
+	
+		li:hover {
+			background: #4b545f;
+		}
+	}
+
+	.navItem:hover > ul, .navItem:hover > .navArrow {
+		display: block;	
+	}
+
+	nav ul:after {
+		content: ""; 
+		clear: both; 
+		display: block;
+	}
+
+	nav ul li:hover {
+		background: #4b545f;
+		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+	}
+	nav ul li:hover a {
+		color: #fff;
+	}
+	
+	nav ul li a { 
+		text-decoration: none;
+	}
+	#home_btn, #about_btn, #contact_btn {	
+		line-height: 40px;
+	}
+
+	#products_btn {
+		vertical-align: middle;
+		line-height: 20px;
+	}
+	/* END NAVIGATION */
+}
+
+
+.container, nav {
+	width: 880px;
+	margin: auto;
+}
+
+.container {
+	top: 10px;
+}
+
+/* FOOTER */
+footer {
+	position: relative;
+	border-top: 1px solid white;
+	font-size: 10px;
+}
+
+#copyrightInfo {
+	float: left;
+}
+
+#footerLinks {
+	list-style: none;
+	float: right;
+	display: inline-block;
+}
+#footerLinks li {
+	float: left;
+	margin: 0 5px 0 5px;
+}

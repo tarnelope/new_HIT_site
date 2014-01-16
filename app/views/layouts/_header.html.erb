@@ -1,0 +1,43 @@
+<header id="headerDiv">
+<nav>
+	<a href="../home/index.html">
+		<div id="logo">	
+		</div>
+	</a>
+	<ul id="topNav">
+		<li class="navItem" id="home_btn">
+			<%= link_to "HOME", home_index_path%>	
+		</li>
+		<li class="navItem" id="about_btn">
+			<%= link_to "ABOUT", about_path %>
+			<div class="navArrow">
+				<%= image_tag "navArrow.png" %>
+			</div>
+			<ul class="sub">
+				<li><a href="#">Our Company</a></li>
+				<li><a href="#">Partnerships</a></li>
+				<li><a href="#">Awards</a></li>
+			</ul>
+		</li>
+		<li class="navItem" id="products_btn">
+			<%= link_to "PRODUCTS & SERVICES", products_path %>
+			<div class="navArrow">
+				<%= image_tag "navArrow.png" %>
+			</div>
+			<ul class="sub">
+				<li><a href="#">All Products & Services</a></li>
+				<li><a href="#">CTP Plater 2230</a></li>
+				<li><a href="#">CTP Plater 2332</a></li>
+				<li><a href="#">CTP Thermal Head</a></li>
+				<li><a href="#">Laser System Repair</a></li>
+				<li><a href="#">Surface Inspector</a></li>
+				<li><a href="#">Solar Technologies</a></li>
+			</ul>
+		</li>
+		<li class="navItem">
+			<a id="contact_btn">CONTACT</a>
+			<%= link_to "CONTACT", contact_path %>
+		</li>
+	</ul>
+</nav>
+</header>
