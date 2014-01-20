@@ -7,10 +7,12 @@
 
 <div id='productContainer'>
 <div id='productNav'>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= link_to item.title, item %></td>
+      </tr>
+    <% end %>
 	<ul>
-		<!-- <li><a href="#productCompanyText">Company</a></li>
-		<li><a href="#productClientsText">Partners & Clients</a></li>
-		<li><a href="#productAwardsText">Awards & Certifications</a></li> -->
 			<li><a href="/products/index.html">Product Information</a></li>
 			<li><a href="/products/solarsign.html">Solar Panel &amp; Sign Technology</a></li>
 			<li><a href="/products/CTPthermal.html">Thermal Head for CTP</a></li>
