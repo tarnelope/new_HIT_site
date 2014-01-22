@@ -13,26 +13,4 @@
 
 ActiveRecord::Schema.define(version: 20140116043700) do
 
-  create_table "items", force: true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "spec_file_name"
-    t.string   "spec_content_type"
-    t.integer  "spec_file_size"
-    t.datetime "spec_updated_at"
-  end
-
-  create_table "products", force: true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "specs_file_name"
-    t.string   "specs_content_type"
-    t.integer  "specs_file_size"
-    t.datetime "specs_updated_at"
-  end
-
 end

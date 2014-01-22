@@ -1,5 +1,5 @@
 HITWebsite::Application.routes.draw do
-  resources :items
+  resources :products
 
   get "home/index"
   #get "url suffix" => 'location'
