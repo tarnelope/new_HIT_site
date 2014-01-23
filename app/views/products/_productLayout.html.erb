@@ -1,0 +1,26 @@
+<div id='productBanner' class="banner">
+	<div id='productTitle' class="bannerTitle">
+		<h1>HIT Products & Services</h1>
+	</div>
+</div>
+
+<div id='productContainer'>
+	<div id='productNav' class="contentNav">
+		<ul>
+   	 	<% @products.each do |product| %>
+		<li><%= link_to product.title, product %></li>
+		<% end %>
+		</ul>
+		<!-- <ul>
+				<li><a href="/products/index.html">Product Information</a></li>
+				<li><a href="/products/solarsign.html">Solar Panel &amp; Sign Technology</a></li>
+				<li><a href="/products/CTPthermal.html">Thermal Head for CTP</a></li>
+				<li><a href="/products/mbeamDigPrinter.html">Optical Laser System Repair</a></li>
+				<li><a href="/products/hit-plater2230.html">CTP - Plater 2230</a></li>
+				<li><a href="/products/hit-plater2332.html">CTP - Plater 2332</a></li>
+				<li><a href="si-1000.html">Surface Inspector</a></li>
+				<li><a href="patents.html">Patents & Inventions</a></li>
+		</ul> -->
+	</div>
+	
+	<div id='productContent' class="content">

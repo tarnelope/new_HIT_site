@@ -32,8 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'redcarpet'
+
+gem "nested_form", :git => 'https://github.com/fxposter/nested_form.git'
+
+
 #gem 'carrierwave'
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+#gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

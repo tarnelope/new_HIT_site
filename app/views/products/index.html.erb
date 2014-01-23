@@ -1,29 +1,11 @@
-<h1>Listing products</h1>
+<%= render 'productLayout' %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.title %></td>
-        <td><%= product.description %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Product', new_product_path %>
+	<div id='productText'>
+	
+	<h3>Products & Services</h3>
+	<p>HIT strives to deliver tangible solutions. HIT works continuously, both closely with partners or independently by utilizing its fully-equipped laboratory, in identifying rising challenges in industry and then designing, perfecting, and manufacturing technologies specifically tailored to address them. Following this mindset, HIT has an established history of successful products which it looks forward to extending. If you wish for more information on a certain technology that is not provided here or have inquiries about a possible future collaboration, please do not hesitate to <a href="mailto:info@holoimagetechnology.com">contact us</a>.  </p>
+	</div> <!-- end #productText -->
+	
+	
+</div> <!-- end #productContent -->
+</div> <!-- end #productContainer -->

@@ -11,6 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140116043700) do
+ActiveRecord::Schema.define(version: 20140122210658) do
+
+  create_table "images", force: true do |t|
+    t.string   "imageURL"
+    t.integer  "product_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+  end
+
+  create_table "products", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "spec_file_name"
+    t.string   "spec_content_type"
+    t.integer  "spec_file_size"
+    t.datetime "spec_updated_at"
+    t.string   "image_url"
+  end
 
 end

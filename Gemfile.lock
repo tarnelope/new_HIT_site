@@ -1,12 +1,8 @@
 GIT
-  remote: git://github.com/thoughtbot/paperclip.git
-  revision: f6f5ea1bd0b41dbbc1d030cf8290cb0f775e770a
+  remote: https://github.com/fxposter/nested_form.git
+  revision: 94dc6456cb07736825bf687c898e953c32e68587
   specs:
-    paperclip (3.5.2)
-      activemodel (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (~> 0.5.3)
-      mime-types
+    nested_form (0.2.2)
 
 GEM
   remote: https://rubygems.org/
@@ -38,10 +34,6 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     builder (3.1.4)
-    climate_control (0.0.3)
-      activesupport (>= 3.0)
-    cocaine (0.5.3)
-      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -86,6 +78,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    redcarpet (3.0.0)
     sass (3.2.12)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -125,8 +118,9 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
-  paperclip!
+  nested_form!
   rails (= 4.0.2)
+  redcarpet
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3

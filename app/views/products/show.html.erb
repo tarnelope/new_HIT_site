@@ -1,14 +1,21 @@
-<p id="notice"><%= notice %></p>
+<%= render 'productLayout' %>
 
-<p>
-  <strong>Title:</strong>
+
+<h3>
   <%= @product.title %>
-</p>
+</h3>
 
 <p>
-  <strong>Description:</strong>
-  <%= @product.description %>
+  <%= markdown(@product.description) %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<div class="productImgs">
+	<%- @product.images.each do |img| %>
+		<%#=image_tag "productImages/"+img.imageURL, :class => "productImages" %>
+		<h4><%= img.title %></h4>
+  	  	<%= link_to image_tag("productImages/"+img.imageURL, :class => "productImages" ), "../assets/productImages/"+img.imageURL %> </br >
+  	<% end %>
+</div>
+	
+</div> <!-- end #productContent -->
+</div> <!-- end #productContainer -->

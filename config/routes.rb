@@ -4,15 +4,18 @@ HITWebsite::Application.routes.draw do
   get "home/index"
   #get "url suffix" => 'location'
   get 'about' => 'home#about'
-  get 'products' => 'products#products'
+  get 'all' => 'products#all'
   get 'contact' => 'home#contact'
-  get 'new' =>'items#new'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
    root 'home#index'
 
+   resources :products do 
+       resources :images
+     end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
