@@ -13,8 +13,8 @@
  */
 
 body {
-	background: rgb(20, 20, 20);
-	color: rgba(255, 255, 255, 0.95);
+	background: white;//#191919;
+	color: black;//rgba(255, 255, 255, 0.95);
 	font-family: Helvetica;
 	margin: 0;
 }
@@ -22,7 +22,6 @@ body {
 #headerDiv {
 	width: 100%;
 	min-width:960px;
-	height: 80px;
 	background: #ffffff;
 	background: -moz-linear-gradient(top,  #ffffff 0%, #cccccc 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cccccc));
@@ -96,7 +95,6 @@ body {
 
 		li {
 			width: 13em;
-			/*height: 40px; */
 			line-height: 40px;
 		}
 	
@@ -130,6 +128,10 @@ body {
 	}
 	#home_btn, #about_btn, #contact_btn {	
 		line-height: 40px;
+		
+		.navArrow img {
+			margin-bottom: 10px;
+		}
 	}
 
 	#products_btn {
@@ -139,13 +141,14 @@ body {
 	/* END NAVIGATION */
 }
 
-.container, nav {
+.container, nav, #footerContainer {
 	width: 880px;
 	margin: auto;
 }
 
 .container {
-	top: 10px;
+	min-height: 100%;
+	overflow: hidden;
 }
 
 .banner {
@@ -154,6 +157,7 @@ body {
 }
 
 .bannerTitle {
+	color:white;
 	position: absolute;
 	width: 875px;
 	top: 7.8em;
@@ -161,46 +165,62 @@ body {
 	font-size: 1.25em;
 }
 
-.contentNav {
-	width: 11em;
-	float:left;
-	margin-right: 0.8em;
-	li {
-		padding-bottom: 0.5em;
-		list-style: none;
+.contentContainer {
+	display: inline-block;
+	height: 20em;
+	
+	.contentNav {
+		height: inherit;
+		width: 11em;
+		float:left;
+		padding-top: 0.5em;
+		padding-right: 0.8em;
+		background-color: rgb(213, 213, 213);
+		li {
+			padding-bottom: 0.5em;
+			list-style: none;
+		}
 	}
+	
+	.content {
+		//margin-left: 0.8em;
+		height: inherit;
+		padding-left: 1em;
+		padding-right: 1em;
+		border-left: 2px solid white;
+		float: left;
+		width: 40.25em;
+		overflow: scroll;
+		p {
+			line-height: 1.25em;
+		}
+	}
+
 }
 
-.content {
-	padding-left: 1em;
-	padding-right: 1em;
-	border-left: 2px solid white;
-	float: left;
-	width: 40.25em;
-	height: 20em;
-	overflow: scroll;
-	p {
-		line-height: 1.25em;
-	}
-}
+
 
 /* FOOTER */
 footer {
-	position: relative;
-	border-top: 1px solid white;
-	font-size: 10px;
+	font-size: 10px;		
+	background-color: black;
+	height: 3em;
+	padding: 0.25em;
+	color: #6FB7F9;
+	#copyrightInfo {
+		float: left;
+	}
+	#footerLinks {
+		list-style: none;
+		float: right;
+	}
+	#footerLinks li {
+		float: left;
+		margin: 0 5px 0 5px;
+	}
 }
 
-#copyrightInfo {
-	float: left;
-}
 
-#footerLinks {
-	list-style: none;
-	float: right;
-	display: inline-block;
-}
-#footerLinks li {
-	float: left;
-	margin: 0 5px 0 5px;
-}
+
+
+

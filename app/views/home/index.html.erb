@@ -7,8 +7,8 @@
 			</div>
 			<div class="slideLabel" id="ctpLabel">
 				<div class="slideLabelText">HIT delivers the highest quality CTP and optical system products and services fit for any task and budget.</div>
-				<div class="slideLabelBtn">Learn More</div>
-			</div>
+				<%= link_to product_path(:id => 2) do %><div class="slideLabelBtn">Learn More</div> <% end %>
+			</div> <!-- End of slideLabel-->
 		</li>
 		
 		<li class="slideImage" id="slide-2">
@@ -16,7 +16,7 @@
 				<%= image_tag 'solarLights.png' %>
 				<div class="slideLabel" id="solarLabel">
 					<div class="slideLabelText">Facilitate a sustainable future with HIT's original public infrastructure lighting solutions.</div>
-					<div class="slideLabelBtn">Learn More</div>
+					<%= link_to product_path(:id => 1) do %><div class="slideLabelBtn">Learn More</div> <% end %>
 				</div>
 			</div>
 			
@@ -27,7 +27,7 @@
 				<%= image_tag'opticsLab.png'%>
 				<div class="slideLabel" id="opticsLabel">
 					<div class="slideLabelText">Companies from all over the world have chosen to collaborate with HIT's state of the art laboratory and team of experts.</div>
-					<div class="slideLabelBtn">Learn More</div>
+					<%= link_to about_path(:anchor => "aboutClientsText") do %><div class="slideLabelBtn">Learn More</div> <% end %>
 				</div>
 			</div>
 		</li>
@@ -37,11 +37,10 @@
 				<%= image_tag'opticHead.png'%>
 				<div class="slideLabel" id="contactLabel">
 					<div class="slideLabelText">Contact HIT now and receive world-class service and solutions for problems of all complexity.</div>
-					<div class="slideLabelBtn">Learn More</div>
+					<%= link_to contacts_path do %><div class="slideLabelBtn">Learn More</div> <% end %>
 				</div>
 			</div>
 		</li>
-		
 	</ul>
 </div>
 <div class="homeInfoBar">

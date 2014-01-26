@@ -1,0 +1,51 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#contactBanner {
+	background-image: url(/assets/contactBanner.png);
+}
+
+#contactLeft, #contactRight {
+	display: inline;
+	float: left;
+	width: 26em;
+	height: 41em;
+	padding-left: 1em;
+	
+}
+#contactRight {
+	border-left: 2px solid rgb(213, 213, 213);
+}
+
+#contactForm {
+	#contactFormTitle {
+		display: inline-block;	
+	}
+	h3 {
+		display: inline-block;
+		float: left;
+	}
+	#requiredLabel {
+		padding-top: 2em;
+		float: left;
+		font-size: 12px;
+		text-indent: 2em;
+	}
+	
+	.formField {
+		width: 36em;
+	}
+	
+	#contactFormBtn {
+		float: right;
+		margin-right: 0.69em;
+		font: 1.25em helvetica,sans-serif;
+		background: #FFCC00;
+		width: 14em;		
+		border: none;
+		padding: 3px;
+		-webkit-appearance: none
+	}
+	
+}

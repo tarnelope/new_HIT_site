@@ -1,0 +1,25 @@
+<div id="contactFormTitle">
+	<h3>Contact Form</h3> 
+	<div id="requiredLabel">( * = required )</div>
+</div>
+
+<%= simple_form_for @contact do |f| %>
+	<div>
+		<%= f.input :name, :input_html => { :class => 'formField'}  %>
+	</div>
+	<div>
+	<%= f.input :email, :input_html => { :class => 'formField'}  %>
+</div>
+	<div>
+	<%= f.input :phone, :input_html => { :class => 'formField'}  %>
+</div>
+<div>
+	<%= f.input :message, :as => :text, :input_html => { :rows => 10, :class => 'formField'} %>
+</div>
+	<div style="display: none">
+		<%= f.input :nickname %>
+	</div>
+	<div>
+		<%= f.submit "Send", :id => 'contactFormBtn' %>
+	</div>
+<% end %>

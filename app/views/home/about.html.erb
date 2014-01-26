@@ -1,26 +1,26 @@
+<%= provide(:title, 'Welcome')%>
 <div id='aboutBanner' class="banner">
 	<div id='aboutTitle' class="bannerTitle">
 		<h1>About Holo Image Technology (HIT)</h1>
 	</div>
 </div>
 
-<div id='aboutContainer'>
+<div id='aboutContainer' class='contentContainer'>
 <div id='aboutNav' class="contentNav">
 	<ul>
-		<li><a href="#aboutCompanyText">Company</a></li>
-		<li><a href="#aboutClientsText">Partners & Clients</a></li>
-		<li><a href="#aboutAwardsText">Awards & Certifications</a></li>
+		<li><%= link_to "Our Company", about_path %></li>
+		<li><%= link_to "Partnerships", about_path(:anchor => "aboutClientsText") %></li>
+		<li><%= link_to "Awards & Certifications", about_path(:anchor => "aboutAwardsText")%></li>
 	</ul>
 </div>
 
 <div id='aboutContent' class="content">
 	<div id='aboutCompanyText'>
-	</br>
 	<h3>Company</h3>
 		<p>Since 1992, HIT has been providing dedicated, one-on-one engineering expertise to clients from all over the world. HIT's contributions and leadership can be found in the research, design, and manufacturing of technologies for a wide variety of purposes, such as industrial grade assemblers, biomedical devices, consumer electronics, commercial pastry printers, and solar powered generators. </br> </br>The company pays close attention to each one of its clients to help them realize their goals more quickly and efficiently with sustainable economic savings. Helping clients achieve success through technical expertise and dedicated service stands as the ultimate goal of HIT.
 		</p>
 	</div> <!-- end #aboutCompanyText -->
-	
+	<hr />
 	<div id="aboutClientsText">
 		<h3>Partners & Clients</h3>
 	    <p>The list below highlights the diversity of HIT's past partners and clients in regards to their size, location, and area of specialty. HIT prides itself on its enthusiasm and versatility to pursue and support research endeavors of any scale. For more details on any past projects or on how to collaborate with HIT in the future, please <a href="mailto:info@holoimagetechnology.com">contact us</a> today.</p>
@@ -48,9 +48,8 @@
 	                   </ul>
 	           </div>
 	</div> <!-- end #aboutClientText -->
-	
+	<hr />
 	<div id='aboutAwardsText'>
-	</br>
 	<h3>Awards & Certification</h3>
 	<div class="lists">
 	        	<ul>

@@ -1,19 +1,21 @@
 <footer>
+	<div id="footerContainer">
 	<div id="copyrightInfo">
-		<p>Copyright © 2013 Holo Image Technology. All rights reserved.</p>
+		<p>Copyright © 2014 Holo Image Technology. All rights reserved.</p>
 	</div>
 	<ul id="footerLinks">
 			<li>
-				<a>Home</a>
+				<%= link_to "Home", home_index_path %>
 			</li>
 			<li>
-				<a>About</a>
-			</li>
-			<li
-				<a>Products & Services</a>
+				<%= link_to "About", about_path %>
 			</li>
 			<li>
-				<a>CONTACT</a>
+				<%= link_to "Prodcuts", products_path %>
+			</li>
+			<li>
+				<%= link_to "Contact", contacts_path%>
 			</li>
 	</ul>
+</div>
 </footer>
