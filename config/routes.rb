@@ -19,6 +19,8 @@ HITWebsite::Application.routes.draw do
      
   
    resources "contacts", only: [:new, :create]
+   
+   resource :admin_session
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

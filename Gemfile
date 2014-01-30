@@ -39,6 +39,7 @@ gem 'mail_form', '~> 1.5.0.rc'
 gem 'simple_form', '~> 3.0.0.rc'
 # }
 
+gem "authlogic", "~> 3.3.0"
 
 #gem "nested_form", :git => 'https://github.com/fxposter/nested_form.git'
 

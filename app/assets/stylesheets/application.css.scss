@@ -37,7 +37,30 @@ body {
 	nav {
 		height: 85px;
 		clear: both;
+		ul:after {
+			content: ""; 
+			clear: both; 
+			display: block;
+		}
+		
+		ul {
+			li:hover {
+			background: #4b545f;
+			background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+			background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+			background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+			a {
+				color: #fff;
+			}
+		} 
+	
+		li a { 
+			text-decoration: none;
+		}
 	}
+	}
+	
+	
 	#logo {
 		background-image:url(/assets/hit-logo.png);
 		background-repeat: no-repeat;
@@ -107,25 +130,6 @@ body {
 		display: block;	
 	}
 
-	nav ul:after {
-		content: ""; 
-		clear: both; 
-		display: block;
-	}
-
-	nav ul li:hover {
-		background: #4b545f;
-		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
-	}
-	nav ul li:hover a {
-		color: #fff;
-	}
-	
-	nav ul li a { 
-		text-decoration: none;
-	}
 	#home_btn, #about_btn, #contact_btn {	
 		line-height: 40px;
 		
@@ -137,6 +141,10 @@ body {
 	#products_btn {
 		vertical-align: middle;
 		line-height: 20px;
+	}
+	
+	a:visited {
+		color: rgb(60, 60, 60);
 	}
 	/* END NAVIGATION */
 }
@@ -171,19 +179,34 @@ body {
 	
 	.contentNav {
 		height: inherit;
-		width: 11em;
+		width: 11.825em;
 		float:left;
 		padding-top: 0.5em;
 		padding-right: 0.8em;
 		background-color: rgb(213, 213, 213);
+		a {
+			text-decoration: none;
+		}
+		a:visited {
+			color: rgb(37, 50, 99);
+		}
 		li {
-			padding-bottom: 0.5em;
+			padding-bottom: 1em;
 			list-style: none;
+		}
+		li a:hover {
+			color: rgb(177, 131, 15);
 		}
 	}
 	
 	.content {
-		//margin-left: 0.8em;
+		a {
+			text-decoration: none;
+			font-weight: bold;
+		}
+		a:visited {
+			color: blue;
+		}
 		height: inherit;
 		padding-left: 1em;
 		padding-right: 1em;
@@ -213,6 +236,15 @@ footer {
 	#footerLinks {
 		list-style: none;
 		float: right;
+		a {
+			text-decoration: none;
+		}
+		ul li:hover {
+			color: white;
+		}
+		a:visited {
+			color: #6FB7F9;
+		}
 	}
 	#footerLinks li {
 		float: left;
