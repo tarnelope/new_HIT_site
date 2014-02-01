@@ -5,7 +5,7 @@ HITWebsite::Application.routes.draw do
   #get "url suffix" => 'location'
   get 'about' => 'home#about'
   get 'all' => 'products#all'
-  get 'contacts' => 'contacts#index'
+  #get 'contacts' => 'contacts#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -14,11 +14,11 @@ HITWebsite::Application.routes.draw do
    root 'home#index'
 
    resources :products do 
-       resources :images
-     end
+    resources :images
+   end
      
   
-   resources "contacts", only: [:new, :create]
+   resources :contacts, only: [:index, :create]
    
    resource :admin_session
   # Example of regular route:

@@ -23,6 +23,7 @@ gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -37,15 +38,19 @@ gem 'redcarpet'
 # Forms, mail {
 gem 'mail_form', '~> 1.5.0.rc'
 gem 'simple_form', '~> 3.0.0.rc'
+gem 'contact_us', '~> 0.5.1'
 # }
 
 gem "authlogic", "~> 3.3.0"
 
+group :development, :test do
+  gem 'foreman'
+end
+
+#For easy configuration of ENV variables.
+gem 'figaro'
+
 #gem "nested_form", :git => 'https://github.com/fxposter/nested_form.git'
-
-
-#gem 'carrierwave'
-#gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

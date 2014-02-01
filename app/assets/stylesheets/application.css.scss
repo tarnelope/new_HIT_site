@@ -149,6 +149,7 @@ body {
 	/* END NAVIGATION */
 }
 
+/* START OVERALL CONTAINER */
 .container, nav, #footerContainer {
 	width: 880px;
 	margin: auto;
@@ -158,6 +159,7 @@ body {
 	min-height: 100%;
 	overflow: hidden;
 }
+/* END OVERALL CONTAINER */
 
 .banner {
 	background-repeat: no-repeat;
@@ -221,7 +223,11 @@ body {
 
 }
 
-
+.notice {
+	color: red;
+	font-weight: bold;
+	font-style: oblique;
+}
 
 /* FOOTER */
 footer {
@@ -239,16 +245,16 @@ footer {
 		a {
 			text-decoration: none;
 		}
-		ul li:hover {
-			color: white;
-		}
 		a:visited {
 			color: #6FB7F9;
 		}
-	}
-	#footerLinks li {
-		float: left;
-		margin: 0 5px 0 5px;
+		li {
+			float: left;
+			margin: 0 5px 0 5px;
+			a:hover {
+				color: rgb(177, 131, 15);
+			}
+		}	 
 	}
 }
 

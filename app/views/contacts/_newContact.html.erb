@@ -23,3 +23,6 @@
 		<%= f.submit "Send", :id => 'contactFormBtn' %>
 	</div>
 <% end %>
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
