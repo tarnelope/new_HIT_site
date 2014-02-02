@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -49,6 +49,12 @@ end
 
 #For easy configuration of ENV variables.
 gem 'figaro'
+
+#Postgres
+gem 'pg'
+
+#TAPS for migrating DB from Sqlite to Postgres
+gem 'taps'
 
 #gem "nested_form", :git => 'https://github.com/fxposter/nested_form.git'
 
