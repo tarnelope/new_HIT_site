@@ -42,6 +42,8 @@ HITWebsite::Application.configure do
       :openssl_verify_mode  => 'none'
 }
 
+#AuthLogic initializer
+
  
   
 end

@@ -19,4 +19,19 @@ class ApplicationController < ActionController::Base
       @current_admin = current_admin_session && current_admin_session.user  
     end  
     
+    def require_user
+      logger.debug "ApplicationController::require_user"
+      unless current_admin
+        store_location
+        flash[:notice] = "You must be logged in to access this page"
+        redirect_to new_admin_session_url
+        return false
+      end
+    end
+    
+    def store_location
+          session[:return_to] = request.url
+        end
+    
+        
 end

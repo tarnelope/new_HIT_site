@@ -41,6 +41,7 @@ gem 'simple_form', '~> 3.0.0.rc'
 gem 'contact_us', '~> 0.5.1'
 # }
 
+#For admin login
 gem "authlogic", "~> 3.3.0"
 
 group :development, :test do

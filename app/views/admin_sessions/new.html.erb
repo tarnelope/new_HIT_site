@@ -1,6 +1,6 @@
 <%= provide(:title, 'Admin Login')%>
   
-<%= form_for @admin_session, :url => admin_session_path do |f| %>  <h1>TEST</h1>
+<%= form_for @admin_session, :url => admin_session_path do |f| %>
   <p>  
     <%= f.label :login %><br />  
     <%= f.text_field :login %>  
@@ -13,3 +13,7 @@
   
   <%= f.submit "Login" %>  
 <% end %>  
+
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>

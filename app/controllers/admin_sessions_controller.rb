@@ -1,4 +1,7 @@
 class AdminSessionsController < ApplicationController  
+  
+  before_filter :require_user, :only => :destroy
+    
   def new
     @admin_session = AdminSession.new
   end
@@ -9,6 +12,7 @@ class AdminSessionsController < ApplicationController
       flash[:notice] = "Login successful!"
       redirect_to products_path
     else
+      flash[:notice] = "Not successfully saved."
       render :action => :new
     end
   end
