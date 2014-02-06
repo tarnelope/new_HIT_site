@@ -1,4 +1,1 @@
-web: bundle exec rails s
-
-.env
-Procfile
+web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
