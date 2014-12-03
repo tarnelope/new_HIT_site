@@ -1,0 +1,437 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+body {
+  color: black;
+  font-family: 'Ruda', sans-serif;
+  margin: 0;
+  background-image: url(tiny_grid.png); }
+
+#headerDiv {
+  width: 100%;
+  min-width: 960px;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, white 0%, #cccccc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #cccccc));
+  background: -webkit-linear-gradient(top, white 0%, #cccccc 100%);
+  background: -o-linear-gradient(top, white 0%, #cccccc 100%);
+  background: -ms-linear-gradient(top, white 0%, #cccccc 100%);
+  background: linear-gradient(to bottom, white 0%, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 );
+  border-bottom: 4px solid #FFCC00;
+  /* NAVIGATION CSS */
+  /*#logo img{
+  	top: 0.4em;
+  	float: left;
+  	position: relative;
+  }*/
+  /* END NAVIGATION */ }
+  #headerDiv nav {
+    height: 85px;
+    clear: both; }
+    #headerDiv nav ul:after {
+      content: "";
+      clear: both;
+      display: block; }
+    #headerDiv nav ul li:hover {
+      background: #4b545f;
+      background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+      background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+      background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%); }
+      #headerDiv nav ul li:hover a {
+        color: #fff; }
+    #headerDiv nav ul li a {
+      text-decoration: none; }
+  #headerDiv #logo {
+    background-image: url(/assets/hit-logo.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 163px;
+    top: 0.4em;
+    position: relative;
+    display: inline;
+    float: left; }
+  #headerDiv #topNav {
+    margin-top: 2.7em;
+    float: left;
+    margin-left: 18.313em;
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: 1000; }
+  #headerDiv .navItem {
+    float: left;
+    color: #666666;
+    height: 40px;
+    width: 8.875em;
+    border: 1px solid #999999;
+    margin-right: 5px;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  #headerDiv .navArrow {
+    display: none; }
+  #headerDiv .sub {
+    margin-top: 6px;
+    display: none;
+    list-style: none;
+    background: #5f6975;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%; }
+    #headerDiv .sub li {
+      width: 13em;
+      line-height: 40px; }
+    #headerDiv .sub li:hover {
+      background: #4b545f; }
+  #headerDiv .navItem:hover > ul, #headerDiv .navItem:hover > .navArrow {
+    display: block; }
+  #headerDiv #home_btn, #headerDiv #about_btn, #headerDiv #contact_btn {
+    line-height: 40px; }
+    #headerDiv #home_btn .navArrow img, #headerDiv #about_btn .navArrow img, #headerDiv #contact_btn .navArrow img {
+      margin-bottom: 10px; }
+  #headerDiv #products_btn {
+    vertical-align: middle;
+    line-height: 20px; }
+  #headerDiv a:visited {
+    color: #3c3c3c; }
+
+/* START OVERALL CONTAINER */
+.container, nav, #footerContainer {
+  width: 880px;
+  margin: auto; }
+
+.container {
+  min-height: 100%;
+  overflow: hidden; }
+
+/* END OVERALL CONTAINER */
+.banner {
+  background-repeat: no-repeat;
+  height: 150px; }
+
+.bannerTitle {
+  color: white;
+  position: absolute;
+  width: 875px;
+  top: 7.8em;
+  text-align: right;
+  font-size: 1.25em; }
+
+.contentContainer {
+  display: inline-block;
+  height: 20em; }
+  .contentContainer .contentNav {
+    height: inherit;
+    width: 11.825em;
+    float: left;
+    padding-top: 0.5em;
+    padding-right: 0.8em;
+    background-color: #d5d5d5; }
+    .contentContainer .contentNav a {
+      text-decoration: none; }
+    .contentContainer .contentNav a:visited {
+      color: #253263; }
+    .contentContainer .contentNav li {
+      padding-bottom: 1em;
+      list-style: none; }
+    .contentContainer .contentNav li a:hover {
+      color: #b1830f; }
+  .contentContainer .content {
+    height: inherit;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 2px solid white;
+    float: left;
+    width: 40.25em;
+    overflow: scroll; }
+    .contentContainer .content a {
+      text-decoration: none;
+      font-weight: bold; }
+    .contentContainer .content a:visited {
+      color: blue; }
+    .contentContainer .content p {
+      line-height: 1.25em; }
+
+.notice {
+  color: red;
+  font-weight: bold;
+  font-style: oblique; }
+
+/* FOOTER */
+footer {
+  font-size: 10px;
+  background-color: black;
+  height: 3em;
+  padding: 0.25em;
+  color: #6FB7F9; }
+  footer #copyrightInfo {
+    float: left; }
+  footer #footerLinks {
+    list-style: none;
+    float: right; }
+    footer #footerLinks a {
+      text-decoration: none; }
+    footer #footerLinks a:visited {
+      color: #6FB7F9; }
+    footer #footerLinks li {
+      float: left;
+      margin: 0 5px 0 5px; }
+      footer #footerLinks li a:hover {
+        color: #b1830f; }
+#aboutBanner {
+  background-image: url(/assets/aboutBanner.png); }
+
+#aboutTitle {
+  position: absolute;
+  width: 875px;
+  top: 7.8em;
+  text-align: right;
+  font-size: 1.25em; }
+#contactBanner {
+  background-image: url(/assets/contactBanner.png); }
+#contactBanner {
+  background-image: url(/assets/contactBanner.png); }
+
+#contactLeft, #contactRight {
+  display: inline;
+  float: left;
+  width: 26em;
+  height: 41em;
+  padding-left: 1em; }
+
+#contactRight {
+  border-left: 2px solid #d5d5d5; }
+
+#contactForm #contactMap {
+  margin-top: 1.325em; }
+#contactForm #contactFormTitle {
+  display: inline-block; }
+#contactForm h3 {
+  display: inline-block;
+  float: left; }
+#contactForm #requiredLabel {
+  padding-top: 2em;
+  float: left;
+  font-size: 12px;
+  text-indent: 2em; }
+#contactForm .formField {
+  width: 36em; }
+#contactForm #contactFormBtn {
+  float: right;
+  margin-right: 0.69em;
+  font: 1.25em helvetica,sans-serif;
+  background: #FFCC00;
+  width: 14em;
+  border: none;
+  padding: 3px;
+  -webkit-appearance: none;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); }
+.homeSlideshow ul {
+  padding: 0px;
+  list-style: none; }
+.homeSlideshow li {
+  height: 420px; }
+
+#slide-1 {
+  background: #4b545f;
+  background: linear-gradient(top, white 0%, #0066cc 80%);
+  background: -moz-linear-gradient(top, white 0%, #0066cc 80%);
+  background: -webkit-linear-gradient(top, white 0%, #0066cc 80%); }
+
+#slide-2, #slide-3, #slide-4 {
+  display: none; }
+
+.slideLabel {
+  vertical-align: middle; }
+  .slideLabel a {
+    text-decoration: none; }
+
+.image {
+  background-repeat: no-repeat; }
+
+.image, .slideLabel, .homeInfoBox {
+  display: inline-block; }
+
+#ctpImage {
+  width: 17.438em;
+  height: 100%;
+  margin: 1em 0 0 1em;
+  background-image: url(/assets/plater.png); }
+
+#ctpLabel {
+  margin: 0 0 20em 4.125em;
+  width: 28.125em;
+  color: rgba(0, 0, 0, 0.8); }
+
+#solarLabel, #opticsLabel, #contactLabel {
+  position: absolute;
+  color: white; }
+
+#solarLabel {
+  top: 8.375em;
+  width: 29.125em;
+  margin-left: 1.250em; }
+
+#opticsLabel {
+  top: 19.375em;
+  margin-left: 1.250em;
+  width: 36.125em;
+  background: rgba(44, 47, 56, 0.75);
+  padding: 1em; }
+
+#contactLabel {
+  color: #151D1F;
+  top: 12.375em;
+  width: 29.125em;
+  margin-left: 2.250em; }
+
+.slideLabelText {
+  font-size: 2em;
+  line-height: 1.3em; }
+
+.slideLabelBtn {
+  background: #FFCC00;
+  width: 11.875em;
+  height: 2.625em;
+  line-height: 2.625em;
+  color: #000;
+  text-align: center;
+  text-weight: bold;
+  margin: auto;
+  margin-top: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); }
+
+.homeInfoBar {
+  margin-bottom: 1em; }
+
+.homeInfoBox {
+  vertical-align: top;
+  background: rgba(35, 39, 43, 0.9);
+  width: 13.541em;
+  height: 6.250em; }
+  .homeInfoBox a {
+    text-decoration: none;
+    color: rgba(240, 240, 240, 0.8); }
+
+.homeInfoBoxArrow {
+  color: rgba(20, 20, 20, 0.8);
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: auto;
+  margin-top: 5px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1px; }
+
+.activeInfoBox .homeInfoBoxArrow {
+  background: #5F9FF1; }
+.activeInfoBox .homeInfoBox {
+  color: white; }
+.activeInfoBox .homeInfoBoxText {
+  color: white; }
+
+.homeInfoBox:hover .homeInfoBoxText {
+  color: white; }
+.homeInfoBox:hover .homeInfoBoxArrow {
+  background: white; }
+
+.homeInfoBoxText {
+  padding: 12px; }
+#productBanner {
+  background-image: url(/assets/productBanner.png); }
+
+#productNav ul {
+  padding-left: 26px; }
+
+.productImages {
+  width: 30em;
+  margin: auto; }
+/* body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+*/

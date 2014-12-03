@@ -13,10 +13,11 @@
  */
 
 body {
-	background: white;//#191919;
-	color: black;//rgba(255, 255, 255, 0.95);
-	font-family: Helvetica;
+	color: black;
+	font-family: 'Ruda',
+	sans-serif;
 	margin: 0;
+	background-image: url(tiny_grid.png)
 }
 
 #headerDiv {
