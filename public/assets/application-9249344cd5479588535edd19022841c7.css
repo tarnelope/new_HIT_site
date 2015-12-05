@@ -12,10 +12,10 @@
 
  */
 body {
-  background: white;
   color: black;
-  font-family: Helvetica;
-  margin: 0; }
+  font-family: 'Ruda', sans-serif;
+  margin: 0;
+  background-image: url(tiny_grid.png); }
 
 #headerDiv {
   width: 100%;
@@ -178,7 +178,9 @@ footer {
   background-color: black;
   height: 3em;
   padding: 0.25em;
-  color: #6FB7F9; }
+  color: #6FB7F9;
+  position: absolute;
+  width: 100%; }
   footer #copyrightInfo {
     float: left; }
   footer #footerLinks {
@@ -217,6 +219,8 @@ footer {
 #contactRight {
   border-left: 2px solid #d5d5d5; }
 
+#contactForm #contactMap {
+  margin-top: 1.325em; }
 #contactForm #contactFormTitle {
   display: inline-block; }
 #contactForm h3 {
@@ -320,7 +324,7 @@ footer {
 .homeInfoBox {
   vertical-align: top;
   background: rgba(35, 39, 43, 0.9);
-  width: 13.56em;
+  width: 13.541em;
   height: 6.250em; }
   .homeInfoBox a {
     text-decoration: none;

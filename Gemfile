@@ -49,9 +49,7 @@ group :development, :test do
 end
 
 #added on 12/3/2014 based on http://viget.com/extend/fixing-missing-assets-with-rails-4-on-heroku
-group :production do 
-	gem 'rails_12factor'
-end
+gem 'rails_12factor', group: :production
 
 #For easy configuration of ENV variables.
 gem 'figaro'
